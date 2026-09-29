@@ -7,8 +7,8 @@
 
 <br/>
 
-[![Live demo](https://img.shields.io/badge/Live_demo-Open_app-F28229?style=for-the-badge&logo=vercel&logoColor=white)](https://YOUR-LIVE-URL)
-[![API docs](https://img.shields.io/badge/API_docs-Swagger_UI-4E9F5A?style=for-the-badge&logo=swagger&logoColor=white)](https://YOUR-API-URL/docs)
+[![Live demo](https://img.shields.io/badge/Live_demo-Open_app-F28229?style=for-the-badge&logo=vercel&logoColor=white)](https://campus-connect-swe.vercel.app/)
+[![API docs](https://img.shields.io/badge/API_docs-Swagger_UI-4E9F5A?style=for-the-badge&logo=swagger&logoColor=white)](https://campusconnect.itshrestha.dev/docs)
 [![OpenAPI](https://img.shields.io/badge/OpenAPI-Spec-26364F?style=for-the-badge&logo=openapiinitiative&logoColor=white)](backend/openapi.yaml)
 
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -134,7 +134,7 @@
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
-  <img src="assets/architecture-light.svg" alt="High-level system architecture" width="100%">
+  <img src="assets/architecture-dark.svg" alt="High-level system architecture" width="100%">
 </picture>
 </div>
 
@@ -327,14 +327,14 @@ The demo runs on one full college, **IIT Madras BS Degree** (`ds.study.iitm.ac.i
 
 ## Timeline
 
-<a href="milestones/Timeline.md">
+<a href="Milestones/Timeline.md">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
   <img src="assets/timeline-light.svg" alt="Project timeline: five milestones from research on 28 June to final submission on 23 August 2026, then the Best Project Award" width="100%">
 </picture>
 </a>
 
-Read the full dated breakdown in [`milestones/Timeline.md`](milestones/Timeline.md).
+Read the full dated breakdown in [`Milestones/Timeline.md`](Milestones/Timeline.md).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
@@ -360,8 +360,8 @@ Read the full dated breakdown in [`milestones/Timeline.md`](milestones/Timeline.
 
 | Where | What |
 |---|---|
-| [`SUMMARY.md`](SUMMARY.md) | Project summary: problem, users, features, architecture and team |
-| [`milestones/Timeline.md`](milestones/Timeline.md) | Dated project timeline from topic selection to the final submission |
+| [`Summary.md`](Summary.md) | Project summary: problem, users, features, architecture and team |
+| [`Milestones/Timeline.md`](Milestones/Timeline.md) | Dated project timeline from topic selection to the final submission |
 | [`backend/README.md`](backend/README.md) | Backend setup, configuration and testing |
 | [`frontend/README.md`](frontend/README.md) | Frontend setup, structure and design system |
 | [`backend/openapi.yaml`](backend/openapi.yaml) | Full API spec with endpoints, user story mapping, role matrix and error catalogue |

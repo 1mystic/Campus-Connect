@@ -2,7 +2,7 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <img src="assets/banner-light.svg" alt="Campus Connect: find your club, build your story" width="100%">
 </picture>
 
@@ -10,7 +10,7 @@
 
 **Campus Connect** · Team NexMind (Team-003) · IIT Madras BS Degree, Software Engineering Project, May 2026
 
-[Repository](https://github.com/1mystic/MAY2026-Team-003/) ·
+[Repository](https://github.com/1mystic/Campus-Connect/) ·
 [Live app](https://campus-connect-swe.vercel.app/) ·
 [API docs](https://campusconnect.itshrestha.dev/docs)
 
@@ -62,7 +62,7 @@ Eighteen user stories across seven epics, all delivered by the final submission.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
-  <img src="assets/architecture-light.svg" alt="High-level system architecture" width="100%">
+  <img src="assets/architecture-dark.svg" alt="High-level system architecture" width="100%">
 </picture>
 
 A Vue 3 single-page app talks to a FastAPI backend over HTTPS with JWT bearer tokens. Routes call a service layer, which reaches PostgreSQL through a repository layer, so persistence never leaks into route handlers. Every entity is scoped to a college, which keeps one institution's data invisible to another. The Anthropic API key stays server-side.

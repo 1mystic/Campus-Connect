@@ -121,8 +121,8 @@ Responded directly to the Sprint 1 demo.
 🏆 **Campus Connect won the Best Project Award.** The reports don't record the date, so this sits after the final submission.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/award-certificate.svg">
-  <img src="../assets/award-certificate.svg" width="100%" alt="">
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/award-certificate.png">
+  <img src="../assets/award-certificate.png" width="100%" alt="">
 </picture>
 
 ## How user feedback shaped the build
