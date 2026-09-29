@@ -48,14 +48,15 @@
 | **Issue tracker** | Members raise issues and leaders answer them from a queue |
 | **AI club finder** | A bounded tool-calling assistant that matches students to clubs |
 
-### Built for every role
+
+<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/roles-dark.svg">
   <img src="assets/roles-light.svg" alt="Students, Club Leaders and Administrators" width="100%">
 </picture>
 
-### How it works
+<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/how-it-works-dark.svg">
