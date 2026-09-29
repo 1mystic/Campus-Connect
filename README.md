@@ -376,7 +376,7 @@ Read the full dated breakdown in [`Milestones/Timeline.md`](Milestones/Timeline.
 
 ## Team
 
-**Team 003 (Nexmind)** 
+**May 2026 | Team Number : 003 (Nexmind)** 
 
 | Member | Role | Commits | PRs (merged) | Branches |
 |---|---|:---:|:---:|:---:|
