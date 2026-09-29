@@ -144,7 +144,25 @@ The Vue 3 single-page app talks to the FastAPI backend over HTTPS with a JWT. Go
 ### Event to certificate
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FDE9D9','primaryBorderColor':'#F28229','primaryTextColor':'#2E211C','lineColor':'#7A8699','textColor':'#7A8699','secondaryColor':'#E3F1E5','tertiaryColor':'#FDFBF9','noteBkgColor':'#FBF0D2','noteTextColor':'#2E211C','actorLineColor':'#7A8699','labelBoxBkgColor':'#FBF0D2','labelTextColor':'#2E211C','actorBkg':'#FDE9D9','actorBorder':'#F28229','actorTextColor':'#2E211C','signalColor':'#7A8699','signalTextColor':'#7A8699'}}}%%
+%%{init: {'theme':'base','themeVariables':{
+  'primaryColor':'#3A2A22',
+  'primaryBorderColor':'#F29A52',
+  'primaryTextColor':'#FDE9D9',
+  'lineColor':'#E6ECF5',
+  'textColor':'#FFFFFF',
+  'actorBkg':'#3A2A22',
+  'actorBorder':'#F29A52',
+  'actorTextColor':'#FDE9D9',
+  'actorLineColor':'#C9D3E3',
+  'signalColor':'#E6ECF5',
+  'signalTextColor':'#FFFFFF',
+  'noteBkgColor':'#FBF0D2',
+  'noteBorderColor':'#F29A52',
+  'noteTextColor':'#2E211C',
+  'labelBoxBkgColor':'#FBF0D2',
+  'labelTextColor':'#2E211C',
+  'sequenceNumberColor':'#0D1117'
+}}}%%
 sequenceDiagram
     autonumber
     actor S as Student
@@ -157,14 +175,18 @@ sequenceDiagram
     S->>API: POST /events/{id}/register
     API->>DB: create EventRegistration
     API-->>S: registration confirmed
+
     Note over S,L: Event day
+
     L->>API: mark attendance
     API->>DB: checked_in = true
     L->>API: PATCH /events/{id}/results
     API->>DB: set winner, runner-up, participants
+
     API->>R: render certificate PDF (per attendee)
     R->>S3: upload PDF
     S3-->>API: public URL
+
     API->>DB: create Certificate (serial, url)
     API-->>S: result and certificate notification
 ```
@@ -174,7 +196,17 @@ sequenceDiagram
 The assistant is a bounded tool-calling loop. It can only name clubs and events that a tool actually returned, and it falls back to a deterministic recommender if the model is unreachable.
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FDE9D9','primaryBorderColor':'#F28229','primaryTextColor':'#2E211C','lineColor':'#7A8699','textColor':'#7A8699','secondaryColor':'#E3F1E5','tertiaryColor':'#FDFBF9','edgeLabelBackground':'transparent'}}}%%
+%%{init: {'theme':'base','themeVariables':{
+  'primaryColor':'#3A2A22',
+  'primaryBorderColor':'#F29A52',
+  'primaryTextColor':'#FDE9D9',
+  'lineColor':'#E6ECF5',
+  'textColor':'#FFFFFF',
+  'tertiaryTextColor':'#FFFFFF',
+  'secondaryColor':'#1F3A26',
+  'tertiaryColor':'#0D1117',
+  'edgeLabelBackground':'transparent'
+}}}%%
 flowchart TD
     Q([Student asks a question]) --> D{Model decides:<br/>answer or call a tool?}
     D -- tool_use --> T[Execute tool<br/>search_clubs, get_event, ...]
@@ -188,9 +220,9 @@ flowchart TD
     G --> R([Reply shown to student])
     X --> R
 
-    classDef brand fill:#FDE9D9,stroke:#F28229,color:#2E211C;
-    classDef safe fill:#E3F1E5,stroke:#4E9F5A,color:#2E211C;
-    classDef fallback fill:#E4ECF8,stroke:#26364F,color:#2E211C;
+    classDef brand fill:#3A2A22,stroke:#F29A52,color:#FDE9D9;
+    classDef safe fill:#1F3A26,stroke:#5FBF6E,color:#E3F1E5;
+    classDef fallback fill:#1F2E47,stroke:#8FA8D6,color:#E4ECF8;
     class D,T,A,B,F brand;
     class G safe;
     class X fallback;
