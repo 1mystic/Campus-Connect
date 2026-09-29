@@ -5,7 +5,12 @@
   <img src="assets/banner-light.svg" alt="Campus Connect: find your club, build your story" width="100%">
 </picture>
 
-<br/>
+<br>
+
+
+<br> 
+
+<hr>
 
 [![Live demo](https://img.shields.io/badge/Live_demo-Open_app-F28229?style=for-the-badge&logo=vercel&logoColor=white)](https://campus-connect-swe.vercel.app/)
 [![API docs](https://img.shields.io/badge/API_docs-Swagger_UI-4E9F5A?style=for-the-badge&logo=swagger&logoColor=white)](https://campusconnect.itshrestha.dev/docs)
